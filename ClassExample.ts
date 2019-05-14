@@ -2,6 +2,11 @@ class Point {
 
     x: number;
     y: number
+
+    constructor(x:number, y:number, z?:number){
+        this.x = x;
+        this.y = y;
+        }
     
     draw(){
 
@@ -13,8 +18,6 @@ class Point {
     }
 }
 
-let point = new Point();
+let point = new Point(20, 50);
 
-point.x = 20;
-point.y = 320;
 point.draw();
